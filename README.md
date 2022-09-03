@@ -24,3 +24,13 @@ to use it everywhere in your terminal you can setup an alias in you bashrc or zs
 ```bash
 alias emoji='{path-to-your-python} {path-to-the-main.py}'
 ```
+emoji
+```bash
+emoji check
+>>:heavy_check_mark: ✔️
+>>:white_check_mark: ✅
+>>:ballot_box_with_check: ☑️
+>>:checkered_flag: 🏁
+>>:check_box_with_check: ☑
+>>:check_mark: ✔
+```
