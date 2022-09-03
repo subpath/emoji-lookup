@@ -24,7 +24,7 @@ to use it everywhere in your terminal you can setup an alias in you bashrc or zs
 ```bash
 alias emoji='{path-to-your-python} {path-to-the-main.py}'
 ```
-emoji
+example:
 ```bash
 emoji check
 >>:heavy_check_mark: ✔️
