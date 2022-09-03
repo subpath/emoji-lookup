@@ -1,2 +1,2 @@
 # emoji-lookup
-search emoji character in terminal
+search emoji characters in the terminal
