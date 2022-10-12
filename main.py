@@ -1,15 +1,16 @@
 import argparse
 import json
 import os
+from typing import List
 
-ROOT = os.path.dirname(__file__)
+ROOT: str = os.path.dirname(__file__)
 with open(f"{ROOT}/shortnames.json", "r") as f:
     shortnames = json.load(f)
 
 
-def lookup(query: str) -> str:
+def lookup(query: str) -> List[str]:
     """Find shortnames that are matching query."""
-    suggestions = []
+    suggestions: List[str] = []
     for shortname in shortnames:
         if query in shortname:
             suggestions.append(shortname)
@@ -22,7 +23,6 @@ def format_for_output(query: str, suggestion: str) -> str:
 
 
 def main():
-
     query = args.shortname.strip()
     suggestions = lookup(query)
     for suggestion in suggestions:
